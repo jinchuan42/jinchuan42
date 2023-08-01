@@ -1,0 +1,25 @@
+.parentDiv {
+  flex-direction: 'inherit';
+  display: 'flow-root';
+  padding: '2px';
+}
+ 
+ 
+.leftDiv {
+  width: '30%';
+  height: '100%';
+  background: 'white';
+  float: 'left';
+  border: '1px solid black';
+    text-align: 'left';
+}
+ 
+ 
+.rightDiv {
+  width: '70%';
+  height: '100%';
+  background: 'white';
+  float: 'right';
+  border: '1px solid black';
+    text-align: 'right';
+}
