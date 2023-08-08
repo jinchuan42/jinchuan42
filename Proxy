@@ -1,0 +1,20 @@
+/* This method can be implemented the same way as doGetUser.Instead of 
+   * using the createUserFromExternal(loginId) you can extend the 
+   * SampleExternalProxy to implement a specific 
+   * createUserFromExternalUsingDeviceId(uniqueDeviceId). 
+	* For now we will assume that the string loginId can be replaced by a search 
+   * key ID and it will return the matching profile. 
+	 */ 
+	protected User doGetUserByUniqueDeviceId(String inUniqueDeviceId) throws UserProfileResourceException { 
+		return doGetUser(inUniqueDeviceId); 
+	} 
+  
+ 	// Sample implementation as doGetUser 
+ 	protected User doGetUserByMobileId(String inMobileId) throws UserProfileResourceException { 
+ 		return doGetUser(inMobileId); 
+	} 
+ 
+	protected Iterator doGetAllUsers(String role) throws UserProfileResourceException { 
+ 
+		System.out.println("SampleUserManagerImpl.doGetAllUsers - This operation is not implemented !");  
+		ArrayList users = new ArrayL
