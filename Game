@@ -1,0 +1,14 @@
+break;
+	default:
+		break;
+	}
+	return true;
+}
+ 
+void Game::Turn(int id)
+{
+	switch (id)
+	{
+	case 1:id++; break;
+	case 2:id--; break;
+ 
